@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import java.awt.TextField;
 
 public class Main extends JFrame {
 
@@ -47,69 +48,145 @@ public class Main extends JFrame {
 		JButton button1 = new JButton("1");
 		button1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				//TODO
 			}
 		});
-		button1.setBounds(10, 76, 250, 263);
+		button1.setBounds(10, 76, 42, 42);
 		contentPane.add(button1);
 		
 		JButton button2 = new JButton("2");
-		button2.setBounds(59, 76, 201, 263);
+		button2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button2.setBounds(59, 76, 42, 42);
 		contentPane.add(button2);
 		
 		JButton button3 = new JButton("3");
-		button3.setBounds(108, 76, 152, 263);
+		button3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			//TODO
+			}
+		});
+		button3.setBounds(108, 76, 42, 42);
 		contentPane.add(button3);
 		
 		JButton button4 = new JButton("4");
-		button4.setBounds(10, 126, 250, 213);
+		button4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button4.setBounds(10, 126, 42, 42);
 		contentPane.add(button4);
 		
 		JButton button5 = new JButton("5");
-		button5.setBounds(59, 126, 201, 213);
+		button5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button5.setBounds(59, 126, 41, 41);
 		contentPane.add(button5);
 		
 		JButton button6 = new JButton("6");
-		button6.setBounds(108, 126, 152, 213);
+		button6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button6.setBounds(108, 126, 41, 41);
 		contentPane.add(button6);
 		
 		JButton button7 = new JButton("7");
-		button7.setBounds(10, 176, 250, 163);
+		button7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button7.setBounds(10, 176, 42, 42);
 		contentPane.add(button7);
 		
 		JButton button8 = new JButton("8");
-		button8.setBounds(59, 176, 201, 163);
+		button8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button8.setBounds(59, 176, 42, 42);
 		contentPane.add(button8);
 		
 		JButton button9 = new JButton("9");
-		button9.setBounds(108, 176, 152, 163);
+		button9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button9.setBounds(108, 176, 42, 42);
 		contentPane.add(button9);
 		
 		JButton buttonMas = new JButton("+");
-		buttonMas.setBounds(157, 76, 103, 263);
+		buttonMas.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonMas.setBounds(157, 76, 62, 42);
 		contentPane.add(buttonMas);
 		
 		JButton buttonMinus = new JButton("-");
-		buttonMinus.setBounds(157, 126, 103, 213);
+		buttonMinus.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonMinus.setBounds(157, 126, 62, 42);
 		contentPane.add(buttonMinus);
 		
 		JButton buttonEntre = new JButton("/");
-		buttonEntre.setBounds(157, 176, 103, 163);
+		buttonEntre.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonEntre.setBounds(157, 176, 62, 42);
 		contentPane.add(buttonEntre);
 		
 		JButton buttonPor = new JButton("*");
-		buttonPor.setBounds(157, 226, 103, 113);
+		buttonPor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonPor.setBounds(157, 226, 62, 42);
 		contentPane.add(buttonPor);
 		
 		JButton button0 = new JButton("0");
-		button0.setBounds(10, 226, 250, 113);
+		button0.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		button0.setBounds(10, 226, 42, 42);
 		contentPane.add(button0);
 		
 		JButton buttonComa = new JButton(".");
-		buttonComa.setBounds(59, 226, 201, 113);
+		buttonComa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonComa.setBounds(59, 226, 42, 42);
 		contentPane.add(buttonComa);
 		
 		JButton buttonC = new JButton("C");
-		buttonC.setBounds(108, 226, 152, 113);
+		buttonC.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonC.setBounds(108, 226, 42, 42);
 		contentPane.add(buttonC);
 		
 		textField = new JTextField();
@@ -121,11 +198,21 @@ public class Main extends JFrame {
 		textField.setColumns(10);
 		
 		JButton buttonPlusMinus = new JButton("+/-");
-		buttonPlusMinus.setBounds(10, 276, 250, 63);
+		buttonPlusMinus.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonPlusMinus.setBounds(10, 276, 98, 42);
 		contentPane.add(buttonPlusMinus);
 		
 		JButton buttonResultado = new JButton("=");
-		buttonResultado.setBounds(118, 276, 142, 63);
+		buttonResultado.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//TODO
+			}
+		});
+		buttonResultado.setBounds(118, 276, 101, 42);
 		contentPane.add(buttonResultado);
 	}
 }
