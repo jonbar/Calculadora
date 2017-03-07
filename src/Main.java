@@ -153,6 +153,9 @@ public class Main extends JFrame {
 				textField.setText("");
 				hamartarra = false;
 				suma = true;
+				resta = false;
+				division = false;
+				multiplicar = false;
 			}
 		});
 		buttonMas.setBounds(157, 76, 62, 42);
@@ -162,7 +165,13 @@ public class Main extends JFrame {
 		buttonMinus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//TODO
+				num1 = Double.parseDouble(textField.getText());
+				textField.setText("");
 				hamartarra = false;
+				resta = true;
+				suma = false;
+				division = false;
+				multiplicar = false;
 			}
 		});
 		buttonMinus.setBounds(157, 126, 62, 42);
@@ -172,7 +181,13 @@ public class Main extends JFrame {
 		buttonEntre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//TODO
+				num1 = Double.parseDouble(textField.getText());
+				textField.setText("");
 				hamartarra = false;
+				division = true;
+				suma = false;
+				resta = false;
+				multiplicar = false;
 			}
 		});
 		buttonEntre.setBounds(157, 176, 62, 42);
@@ -182,7 +197,13 @@ public class Main extends JFrame {
 		buttonPor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//TODO
+				num1 = Double.parseDouble(textField.getText());
+				textField.setText("");
 				hamartarra = false;
+				multiplicar = true;
+				suma = false;
+				resta = false;
+				division = false;
 			}
 		});
 		buttonPor.setBounds(157, 226, 62, 42);
@@ -237,6 +258,7 @@ public class Main extends JFrame {
 				textField.getText();
 				
 				
+				
 			}
 		});
 		buttonPlusMinus.setBounds(10, 276, 98, 42);
@@ -249,6 +271,15 @@ public class Main extends JFrame {
 				
 				if (suma == true){
 					Double resultado = num1 + num2;
+					textField.setText(resultado.toString());
+				}else if(resta == true){
+					Double resultado = num1 - num2;
+					textField.setText(resultado.toString());					
+				}else if(division == true){
+					Double resultado = num1 / num2;
+					textField.setText(resultado.toString());					
+				}else if(multiplicar == true){
+					Double resultado = num1 * num2;
 					textField.setText(resultado.toString());
 				}
 			}
