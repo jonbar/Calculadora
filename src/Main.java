@@ -19,10 +19,7 @@ public class Main extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField;
 	boolean hamartarra = false;
-	boolean suma = false;
-	boolean resta = false;
-	boolean division = false;
-	boolean multiplicar = false;
+	String operador = null;
 	double num1;
 	double num2;
 
@@ -142,10 +139,7 @@ public class Main extends JFrame {
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
-				suma = true;
-				resta = false;
-				division = false;
-				multiplicar = false;
+				operador = "suma";
 			}
 		});
 		buttonMas.setBounds(157, 76, 62, 42);
@@ -157,10 +151,7 @@ public class Main extends JFrame {
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
-				resta = true;
-				suma = false;
-				division = false;
-				multiplicar = false;
+				operador = "resta";
 			}
 		});
 		buttonMinus.setBounds(157, 126, 62, 42);
@@ -172,10 +163,7 @@ public class Main extends JFrame {
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
-				division = true;
-				suma = false;
-				resta = false;
-				multiplicar = false;
+				operador = "division";
 			}
 		});
 		buttonEntre.setBounds(157, 176, 62, 42);
@@ -187,10 +175,7 @@ public class Main extends JFrame {
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
-				multiplicar = true;
-				suma = false;
-				resta = false;
-				division = false;
+				operador = "multiplicacion";
 			}
 		});
 		buttonPor.setBounds(157, 226, 62, 42);
@@ -238,11 +223,14 @@ public class Main extends JFrame {
 		JButton buttonPlusMinus = new JButton("+/-");
 		buttonPlusMinus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
-				textField.getText();
-				
-				
-				
+				Double numero = Double.parseDouble(textField.getText());
+				if (numero < 0){
+					numero = numero * -1;
+					textField.setText(numero.toString());
+				}else{
+					numero = numero * -1;
+					textField.setText(numero.toString());
+				}				
 			}
 		});
 		buttonPlusMinus.setBounds(10, 276, 98, 42);
@@ -253,16 +241,16 @@ public class Main extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				num2 = Double.parseDouble(textField.getText());
 				
-				if (suma == true){
+				if (operador.equals("suma")){
 					Double resultado = num1 + num2;
 					textField.setText(resultado.toString());
-				}else if(resta == true){
+				}else if(operador.equals("resta")){
 					Double resultado = num1 - num2;
 					textField.setText(resultado.toString());					
-				}else if(division == true){
+				}else if(operador.equals("division")){
 					Double resultado = num1 / num2;
 					textField.setText(resultado.toString());					
-				}else if(multiplicar == true){
+				}else if(operador.equals("multiplicacion")){
 					Double resultado = num1 * num2;
 					textField.setText(resultado.toString());
 				}
