@@ -58,7 +58,6 @@ public class Main extends JFrame {
 		JButton button1 = new JButton("1");
 		button1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button1.getText());
 			}
 		});
@@ -68,7 +67,6 @@ public class Main extends JFrame {
 		JButton button2 = new JButton("2");
 		button2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button2.getText());
 			}
 		});
@@ -78,7 +76,6 @@ public class Main extends JFrame {
 		JButton button3 = new JButton("3");
 		button3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			//TODO
 				textField.setText(textField.getText() + button3.getText());
 			}
 		});
@@ -88,7 +85,6 @@ public class Main extends JFrame {
 		JButton button4 = new JButton("4");
 		button4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button4.getText());
 			}
 		});
@@ -98,7 +94,6 @@ public class Main extends JFrame {
 		JButton button5 = new JButton("5");
 		button5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button5.getText());
 			}
 		});
@@ -108,7 +103,6 @@ public class Main extends JFrame {
 		JButton button6 = new JButton("6");
 		button6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button6.getText());
 			}
 		});
@@ -118,7 +112,6 @@ public class Main extends JFrame {
 		JButton button7 = new JButton("7");
 		button7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button7.getText());
 			}
 		});
@@ -128,7 +121,6 @@ public class Main extends JFrame {
 		JButton button8 = new JButton("8");
 		button8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button8.getText());
 			}
 		});
@@ -138,7 +130,6 @@ public class Main extends JFrame {
 		JButton button9 = new JButton("9");
 		button9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button9.getText());
 			}
 		});
@@ -148,7 +139,6 @@ public class Main extends JFrame {
 		JButton buttonMas = new JButton("+");
 		buttonMas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
@@ -164,7 +154,6 @@ public class Main extends JFrame {
 		JButton buttonMinus = new JButton("-");
 		buttonMinus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
@@ -180,7 +169,6 @@ public class Main extends JFrame {
 		JButton buttonEntre = new JButton("/");
 		buttonEntre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
@@ -196,7 +184,6 @@ public class Main extends JFrame {
 		JButton buttonPor = new JButton("*");
 		buttonPor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				num1 = Double.parseDouble(textField.getText());
 				textField.setText("");
 				hamartarra = false;
@@ -212,7 +199,6 @@ public class Main extends JFrame {
 		JButton button0 = new JButton("0");
 		button0.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(textField.getText() + button0.getText());
 			}
 		});
@@ -222,7 +208,6 @@ public class Main extends JFrame {
 		JButton buttonComa = new JButton(".");
 		buttonComa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				if (hamartarra == false){
 					textField.setText(textField.getText() + buttonComa.getText());
 					hamartarra = true;
@@ -235,7 +220,6 @@ public class Main extends JFrame {
 		JButton buttonC = new JButton("C");
 		buttonC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//TODO
 				textField.setText(null);
 				hamartarra = false;
 			}
